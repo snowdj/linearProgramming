@@ -1,0 +1,38 @@
+\documentclass[9pt]{article}
+
+\title{Programming Assignment Part I}
+\author{
+        Kelly Kaoudis \\
+        CSCI 5654, Fall 2013 \\
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Deliverable}
+\begin{enumerate}
+    \item Part 1: pivotWithEtaFactors.m answering the following questions:
+    \item $ \pi^T * B = c_B^T  $ when $ B = L * U * E1 * ... * En $
+    \item $ B * \tilde{b} = b $
+    \item $ B * \tilde{A_j} = -A_j $
+    \item Find the new eta matrix to append to the basis factors.
+        Build it using a sparse identity matrix with the leaving column replaced by $ -\tilde{A_j} $.
+\end{enumerate}
+
+\section{Implementation}
+I began with making sure I understood the revised
+simplex algorithm, read Vanderbei's description,
+but computing.dcu.ie/~lkillen/teach/CA427rsm.pdf
+ended up being the most helpful description of it.
+I re-watched the videos regarding revised
+simplex to make sure I understood the
+notation in the formulas above.
+
+Then, I replaced every instance of a computation using Ab or Ab' with the eta file.
+
+The last thing I did was to add the basis update: I add an eta-factor to the file which is a sparse identity
+matrix except for $ \tilde{A_j} $, inserted in the column for the enteringIndex. According to testMyPivot, this
+works as expected.
+
+\end{document}

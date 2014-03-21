@@ -1,0 +1,36 @@
+\documentclass[9pt]{article}
+
+\title{Programming Assignment Part II}
+\author{
+    Kelly Kaoudis \\
+    CSCI 5654, Fall 2013 \\
+}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Deliverable}
+\begin{enumerate}
+    \item Part 2: solveOptimizationPhase implementing the following requirements:
+    \item take as input the problem matrix, the rhs constant, and the objective
+    coefficient vector and
+    \item output the maximum objective value and an n x 1 vector of values for
+    the optimal solution for the \textit{original problem variables}
+\end{enumerate}
+
+\section{Implementation}
+I decided to just call my solver function pivotWithEtaFactors and build the
+completed framework around it instead of rewriting code. Also in that spirit,
+I took chunks from testMyPivot where necessary.
+
+To run this beast, call testOptPhase(m,n) in the correct
+folder, as one would for testMyPivot(m,n).
+All other code should be called from there.
+
+solveOptimizationPhase compares the objective
+value to linprog. I did not test yet on the evil problems,
+but if I do the initialization phase extra credit I'll
+test my optimization phase on those problems at the same time.
+
+\end{document}

@@ -1,0 +1,70 @@
+Problem:    problem4
+Rows:       27
+Columns:    11
+Non-zeros:  83
+Status:     OPTIMAL
+Objective:  zeta = 0.2985074627 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 z1           NL             0            -0                       < eps
+     2 z2           NL             0            -0                   -0.134328 
+     3 z3           NL             0            -0                   -0.238806 
+     4 z4           B       0.298507            -0               
+     5 z5           NL             0            -0                   -0.358209 
+     6 z6           B       0.298507            -0               
+     7 z7           NL             0            -0                   -0.358209 
+     8 z8           B       0.298507            -0               
+     9 z9           NL             0            -0                   -0.238806 
+    10 z10          NL             0            -0                   -0.134328 
+    11 z11          B       0.104478            -0               
+    12 mean_a       B       0.522388                           2 
+    13 mean_b       B      -0.522388                           2 
+    14 moment_a     B              5                          10 
+    15 moment_b     NU            -5                          -5     0.0149254 
+    16 sum          NS             1             1             =      0.373134 
+    17 mode_1       NS             0            -0             =      0.313433 
+    18 mode_2       B       0.298507            -0               
+    19 mode_3       NL             0            -0                   -0.626866 
+    20 mode_4       B       0.298507            -0               
+    21 mode_5       B       0.298507            -0               
+    22 mode_6       B       0.298507            -0               
+    23 mode_7       B       0.298507            -0               
+    24 mode_8       B       0.298507            -0               
+    25 mode_9       B       0.298507            -0               
+    26 mode_10      B        0.19403            -0               
+    27 zeta         B       0.298507                             
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 pn5          B              0                             
+     2 pn4          B              0                             
+     3 pn3          B              0                             
+     4 pn2          B       0.298507                             
+     5 pn1          B              0                             
+     6 p0           B       0.298507                             
+     7 p1           B              0                             
+     8 p2           B       0.298507                             
+     9 p3           B              0                             
+    10 p4           B              0                             
+    11 p5           B       0.104478                             
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 2.22e-16 on row 16
+        max.rel.err = 7.40e-17 on row 16
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 3.33e-16 on column 8
+        max.rel.err = 1.40e-16 on column 8
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
